@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abill"
+    tools:context="com.example.prashantmaheshwari.firstapp.Repairfixes">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/constraint"
+            android:layout_marginLeft="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="330dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle">
+
+                <Button
+                    android:id="@+id/enquery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@null"
+                    android:text="For Service Enquiry"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/C13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:background="#ff7310"
+                    android:text="Call" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toTopOf="@+id/cardView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.216">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Brake issues"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="55dp"
+                    android:text="Noises while braking" />
+
+                <CheckBox
+                    android:id="@+id/repair1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Brake warning light is on" />
+
+                <CheckBox
+                    android:id="@+id/repair2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="95dp"
+                    android:text="Handbrake is not effective" />
+
+                <CheckBox
+                    android:id="@+id/repair3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Poor braking" />
+
+                <CheckBox
+                    android:id="@+id/repair4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="115dp"
+                    android:onClick="selectc"
+                    android:text="ABS malfunction light" />
+
+                <CheckBox
+                    android:id="@+id/repair5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="135dp"
+                    android:onClick="selectc"
+                    android:text="Speed sensor issue" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.117">
+
+
+                <CheckBox
+                    android:id="@+id/repair7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Vehicle pulls to one side" />
+
+                <CheckBox
+                    android:id="@+id/repair8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="55dp"
+                    android:text="Bumpy ride" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Suspension issue"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2"
+                app:layout_constraintVertical_bias="0.016">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Steering and ride issue"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Steering wheel vibrates" />
+
+                <CheckBox
+                    android:id="@+id/repair10"
+                    android:layout_width="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:text="Eps light on IC" />
+
+                <CheckBox
+                    android:id="@+id/repair11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Noises while turning" />
+
+                <CheckBox
+                    android:id="@+id/repair12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="95dp"
+                    android:text="Noises while turning" />
+
+
+                <CheckBox
+                    android:id="@+id/repair13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="115dp"
+                    android:text="Steering is heavy" />
+
+                <CheckBox
+                    android:id="@+id/repair14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="135dp"
+                    android:text="Power steering issues" />
+
+                <CheckBox
+                    android:id="@+id/repair15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="160dp"
+                    android:text="Electric steering issues" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3"
+                app:layout_constraintVertical_bias="0.016">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Engine issue"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Engine not starting" />
+
+                <CheckBox
+                    android:id="@+id/repair17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="55dp"
+                    android:text="Slow cranking" />
+
+
+                <CheckBox
+                    android:id="@+id/repair18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Engine check light is on" />
+
+                <CheckBox
+                    android:id="@+id/repair19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="95dp"
+                    android:text="Engine is overheating" />
+
+
+                <CheckBox
+                    android:id="@+id/repair20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="115dp"
+                    android:text="Poor vehicle pickup" />
+
+                <CheckBox
+                    android:id="@+id/repair21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="135dp"
+                    android:text="Rough Engine" />
+
+
+                <CheckBox
+                    android:id="@+id/repair22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="155dp"
+                    android:text="Inspect fluid leak" />
+
+                <CheckBox
+                    android:id="@+id/repair23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="175dp"
+                    android:text="Exhaust and pollution check" />
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rectangle"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4"
+                app:layout_constraintVertical_bias="0.015">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Electrical and accessory issue"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Head light/ back light issue" />
+
+                <CheckBox
+                    android:id="@+id/repair25"
+                    android:layout_width="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:text="Horn not working" />
+
+
+                <CheckBox
+                    android:id="@+id/repair26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Wiper is not working" />
+
+                <CheckBox
+                    android:id="@+id/repair27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="95dp"
+                    android:text="Door lock is not working properly" />
+
+
+                <CheckBox
+                    android:id="@+id/repair28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="115dp"
+                    android:text="Audio system is not working properly" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView5"
+                app:layout_constraintVertical_bias="0.01">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Air conditioning and heating"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Low cooling" />
+
+                <CheckBox
+                    android:id="@+id/repair30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="55dp"
+                    android:text="Cabin recirculation is not working" />
+
+
+                <CheckBox
+                    android:id="@+id/repair31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Low heating" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_width="330dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView6"
+                app:layout_constraintVertical_bias="0.015">
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="#000"
+                    android:text="Clutch and gearbox issues"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/repair32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="35dp"
+                    android:text="Clutch overhaul" />
+
+                <CheckBox
+                    android:id="@+id/repair33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="55dp"
+                    android:text="Gear shifting feels hard" />
+
+
+                <CheckBox
+                    android:id="@+id/repair34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="75dp"
+                    android:text="Clutch is heavy" />
+
+                <CheckBox
+                    android:id="@+id/repair35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="95dp"
+                    android:text="Noisy gearshifts" />
+
+
+                <CheckBox
+                    android:id="@+id/repair36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="selectc"
+                    android:layout_marginTop="115dp"
+                    android:text="Jerky gearshifts" />
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="143dp"
+                android:layout_marginTop="20dp"
+                android:background="#1227c6"
+                android:text="Next"
+                android:id="@+id/r13"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView7"
+                app:layout_constraintVertical_bias="0.005" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

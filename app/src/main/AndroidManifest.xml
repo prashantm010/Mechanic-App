@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prashantmaheshwari.firstapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".FireApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/download"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Forgot" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".RoadSide"
+            android:label="@string/title_activity_road_side" />
+        <activity
+            android:name=".RegularService"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".Carwash"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".Repairfixes"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".Dentpaint"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".TyresService"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".Mullti"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".Aboutus"
+            android:label="@string/title_activity_aboutus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyCars"
+            android:parentActivityName=".ServiceDetails" />
+        <activity
+            android:name=".AddCar"
+            android:parentActivityName=".MyCars" />
+        <activity
+            android:name=".Confirm"
+            android:parentActivityName=".Dealers" />
+        <activity
+            android:name=".Dealers"
+            android:parentActivityName=".ServiceDetails" />
+        <activity
+            android:name=".Offer"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".ServiceDetails"
+            android:parentActivityName=".WheelWork" />
+        <activity
+            android:name=".MyCar2"
+            android:parentActivityName=".RoadSide" />
+        <activity
+            android:name=".Extras"
+            android:parentActivityName=".MyCar2" />
+        <activity
+            android:name=".FinalPage"
+            android:parentActivityName=".Extras" />
+        <activity
+            android:name=".WheelWork"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".MyCar3"
+            android:parentActivityName=".Home" />
+        <activity android:name=".ServiceHistory" />
+        <activity android:name=".Address"></activity>
+    </application>
+
+</manifest>

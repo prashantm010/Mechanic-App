@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/Home"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/home"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/My_cars"
+            android:icon="@drawable/ic_action_car"
+            android:title="@string/my_cars" />
+    </group>
+
+    <group
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/service_history"
+            android:icon="@drawable/ic_service"
+            android:title="@string/service_history" />
+    </group>
+
+    <group
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/Call"
+            android:icon="@drawable/ic_action_call"
+            android:title="@string/call" />
+    </group>
+
+    <group
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/About_us"
+            android:icon="@drawable/ic_action_about_us"
+            android:title="@string/about_us" />
+    </group>
+
+    <group
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/Rate_me"
+            android:icon="@drawable/ic_action_rate_me"
+            android:title="@string/rate_me" />
+    </group>
+
+    <group
+        android:id="@+id/group7">
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_action_share"
+            android:title="@string/share" />
+    </group>
+
+
+</menu>

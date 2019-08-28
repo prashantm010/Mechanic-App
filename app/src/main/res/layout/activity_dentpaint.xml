@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashantmaheshwari.firstapp.Dentpaint"
+    android:background="@drawable/abill"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="330dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rectangle">
+
+        <Button
+            android:id="@+id/enquery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@null"
+            android:text="For Service Enquiry"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/c14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:background="#ff7310"
+            android:text="Call" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#000"
+                android:text="Painting and Denting"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/repair37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="selecte"
+                android:layout_marginTop="35dp"
+                android:text="Prep or undercoat finishes" />
+
+            <CheckBox
+                android:id="@+id/repair38"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:text="Base coat paints" />
+
+
+            <CheckBox
+                android:id="@+id/repair39"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="Acrylic lacquers" />
+
+            <CheckBox
+                android:id="@+id/repair40"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="95dp"
+                android:text="Clear coat finishes" />
+
+            <CheckBox
+                android:id="@+id/repair41"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:text="Full body painting" />
+
+            <CheckBox
+                android:id="@+id/repair42"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="135dp"
+                android:text="Dent removals" />
+
+
+            <CheckBox
+                android:id="@+id/repair43"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="155dp"
+                android:text="Dry dent removal on bumpers" />
+
+
+            <CheckBox
+                android:id="@+id/repair44"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="175dp"
+                android:text="Exhaust pipe welding/repair" />
+
+
+            <CheckBox
+                android:id="@+id/repair45"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="195dp"
+                android:text="Water leaks" />
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView8"
+            app:layout_constraintVertical_bias="0.082">
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#000"
+                android:text="Glass works"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <CheckBox
+                android:id="@+id/repair46"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Front windshield" />
+
+            <CheckBox
+                android:id="@+id/repair47"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:text="Rear glass" />
+
+
+            <CheckBox
+                android:id="@+id/repair48"
+                android:onClick="selecte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="75dp"
+                android:text="Door glass" />
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="143dp"
+            android:layout_marginTop="30dp"
+            android:background="#1227c6"
+            android:text="Next"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:id="@+id/r15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView7"
+            app:layout_constraintVertical_bias="0.005" />
+
+    </LinearLayout>
+</LinearLayout>
